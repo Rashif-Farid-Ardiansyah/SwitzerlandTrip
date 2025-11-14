@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Booking - SwitzerlandTrip</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header style="padding:20px;background:transparent"><h2>Booking Trip</h2></header>
+<section style="padding:40px;min-height:80vh">
+  <div style="max-width:720px;margin:0 auto">
+    <h2>Form Pemesanan</h2>
+    <form id="bookingForm" class="card">
+      <label>Nama<br><input name="name" required></label><br><br>
+      <label>Email<br><input name="email" type="email" required></label><br><br>
+      <label>No HP<br><input name="phone" required></label><br><br>
+      <label>Paket<br>
+        <select name="pkg">
+          <option>Adventure — 7 hari</option>
+          <option>Romantic — 5 hari</option>
+          <option>Family — 6 hari</option>
+        </select>
+      </label><br><br>
+      <label>Tanggal Keberangkatan<br><input type="date" name="date" required></label><br><br>
+      <button class="btn" type="submit">Bayar & Pesan (Demo)</button>
+    </form>
+
+    <h3 style="margin-top:30px">Riwayat Pesanan (localStorage)</h3>
+    <div id="history"></div>
+    <br><a href="index.html">Kembali</a>
+  </div>
+</section>
+<script src="scripts.js"></script>
+<script>
+  // show history on load
+  (function(){
+    const el = document.getElementById('history');
+    if(!el) return;
+    const data = JSON.parse(localStorage.getItem('bookings')||'[]');
+    if(!data.length){ el.innerHTML = '<p>Tidak ada pemesanan.</p>'; return }
+    el.innerHTML = '<ul>'+data.map(b=>`<li><strong>${b.name}</strong> — ${b.pkg} — ${b.date} (ID:${b.id})</li>`).join('')+'</ul>';
+  })();
+</script>
+</body>
+</html>

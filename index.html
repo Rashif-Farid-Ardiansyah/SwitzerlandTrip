@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SwitzerlandTrip — Explore Swiss Wonders</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav">
+      <div class="brand">SwitzerlandTrip</div>
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Destinations ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="zermatt.html">Zermatt</a></li>
+            <li><a href="jungfrau.html">Jungfrau</a></li>
+            <li><a href="lucerne.html">Lucerne</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Packages ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="romantic.html">Romantic</a></li>
+            <li><a href="family.html">Family</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn" href="guest.html">Guest</a>
+        <a class="btn outline" href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Discover Switzerland — Alps, Lakes & Charming Villages</h1>
+        <p>Rencanakan perjalanan impianmu dengan paket travel lengkap dan dukungan transaksi mudah.</p>
+        <div class="hero-cta">
+          <a class="btn large" href="#gallery">Lihat Gallery</a>
+          <a class="btn ghost" href="booking.html">Pesan Sekarang</a>
+        </div>
+      </div>
+      <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+      <div class="gradient-overlay" aria-hidden="true"></div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Galeri Tempat Favorit</h2>
+      <div class="carousel" tabindex="0" aria-roledescription="carousel">
+        <div class="slides">
+          <div class="slide"><img src="img/materhorn.jpg" alt="Matterhorn"></div>
+          <div class="slide"><img src="img/lake.jpg" alt="Lake"></div>
+          <div class="slide"><img src="img/basel1.jpg" alt="Basel"></div>
+          <div class="slide"><img src="img/bern1.jpg" alt="Bern"></div>
+          <div class="slide"><img src="img/interlaken1.jpg" alt="interlaken"></div>
+          <div class="slide"><img src="img/waterfall1.jpg" alt="Waterfall"></div>
+        </div>
+        <button class="prev" aria-label="Sebelumnya">◀</button>
+        <button class="next" aria-label="Berikutnya">▶</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>Keamanan Pembayaran</h3>
+        <p>Transaksi aman dengan enkripsi, simulasi transaksi untuk demo.</p>
+      </div>
+      <div class="card">
+        <h3>Pilih Paket</h3>
+        <p>Paket fleksibel: family, honeymoon, adventure.</p>
+      </div>
+      <div class="card">
+        <h3>Dukungan 24/7</h3>
+        <p>Tim kami siap membantu selama perjalananmu.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div>
+      <h4>Help & Contact</h4>
+      <p>support@switzerlandtrip.com</p>
+      <p>+62 821 1619 8118</p>
+    </div>
+
+    <div>
+      <h4>Solutions</h4>
+      <p>Travel Packages</p>
+      <p>Custom Trips</p>
+      <p>Seasonal Offers</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Contact</p>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>Instagram 
+        TikTok 
+        WhatsApp</p>
+        <div class="footer-socials">
+    <a href="https://wa.me/6282116198118" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/rasiiff/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@rasiffffff_" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+    </div>
+  </div>
+
+
+<div class="footer-bottom">
+  <p>© 2025 SwitzerlandTrip. All rights reserved.</p>
+</div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
